@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    
+}
+
+/*body{
+    background: red;
+}*/
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    /*font-family: 'MuseoModerno', cursive;*/
+}
+
+.navlist{
+    display: flex;
+}
+.navlist a{ /* si aqui falla cambiar li por a*/
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    /*border-bottom: 2px solid white;*/
+    transition: .5s;
+    
+}
+
+.navlist a:hover{/* si aqui falla cambiar li por a*/
+    border-bottom: 2px solid white;
+    
+}
+
+#menu-icon{
+    color: white;
+    font-size: 50px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+
+    /*para el degradado*/
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.nombre_completo{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 70px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+/*.hero-img{/*checar esto
+    width: 100px;
+    height: auto;
+}*/
+
+.hero-text a{/*esto es lo de los botones con los iconos (el de play)*/
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+   transform: translate(8px);
+    
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+    
+}
+/*.hero-text a.ctaa:hover{ por si le quiero poner hover a ese btn
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: .5s;
+}*/
+
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons{
+    position: absolute;
+    top: 30%;
+    padding: 0 9%;
+    
+}
+
+.icons i{/*estos son los iconos de las redes*/
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: .5s;
+}
+.icons i:hover{
+    color: #4d9559;
+    transform: translateY(-5px);
+}
+
+
+
+
+/*para optimizar lo responsive*/
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2%;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1340px){/* para optimizar la img y el texto principal pero algo falla*/
+    .hero-img img{
+        width: 350%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+
+    .hero-text h1{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        font-size: 115px;
+        
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        display: none;
+
+    }
+    .scroll-down{
+        display: none;
+    }
+
+}
+
+@media (max-width: 990px){
+    #menu-icon{/*apartir de aqui inicia el acomodo del icono del menu*/
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;/*el -100 es para que se mantenga oculto el menu*/
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20 px;
+        transition: all .55s ease;
+    }
+
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+        
+    }
+}
+@media (max-width: 680px){
+    .hero-img img{
+        width: 300%;
+        height: auto;
+    }
+}

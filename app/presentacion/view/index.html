@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+  
+
+    <link rel="stylesheet" href="./app/presentacion/view/css/estilos.css">
+    <!-- http://localhost\mvc\app\presentacion\view\css\estilos.css -->
+    <link rel="stylesheet" href="./app/presentacion/view/css/estilosDos.css">
+    <!--box icons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=MuseoModerno&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PagWeb</a>
+
+        <ul class="navlist">
+            
+            <li onclick="reStyle(0)"><a href="#">Estilo 1</a></li>
+            <li onclick="reStyle(1)"><a href="#">Estilo 2</a></li>
+            <li onclick="noStyle()"><a href="#">No Styles</a></li>
+            <li class="nombres" onclick="cambioName(0)"><a href="#">a</a></li>
+            <li class="nombres" onclick="cambioName(1)"><a href="#">a</a></li>
+            <li class="nombres" onclick="cambioName(2)"><a href="#">a</a></li>
+            <li onclick="cambioName(3)"><a href="#">Reset name</a></li>
+            
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h5>ITCG</h5>
+            <h4>18290731</h4>
+            <h1 class="nombre_completo">Alejandro López Rubio</h1>
+            
+            <p>Pasatiempos favoritos:  hablar mal de raquel y apedrear carros</p>
+            <a href="#">boton</a>
+            <a href="https://www.youtube.com/shorts/KUM2p2Weicg" class="ctaa"><i class="ri-play-line"></i> mirar video</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="./app/presentacion/view/img/character.png">
+            <!-- http://localhost\mvc\app\presentacion\view\img\character.png -->
+        </div>
+
+    </section>
+
+    <div class="icons">
+        <a href=""><i class="ri-instagram-line"></i></a>
+        <a href=""><i class="ri-youtube-line"></i></a>
+        <a href=""><i class="ri-facebook-circle-line"></i></a>
+    </div>
+
+    <!--<div class="butonPaBajo">
+        <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+
+    </div>-->
+
+    <!--efecto de scrooll al iniciar la pagina con https://scrollrevealjs.org/ ir al archivo app.js para configurar-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="./app/presentacion/view/js/styles.js"></script>
+    <!-- http://localhost\mvc\app\presentacion\view\js\styles.js -->
+    <script src="./app/presentacion/view/js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    
+</body>
+</html>
