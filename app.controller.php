@@ -35,6 +35,10 @@
             header("Location: /mvc/login");//mover esto si no manda
             //  break;//si no jala me voy a canada
             break;
+
+        case 'app-paises':
+            require_once("./app/paises/paises.controller.php");
+            break;
         default:
             header("HTTP/1.1 404 NOT FOUND");
             break;

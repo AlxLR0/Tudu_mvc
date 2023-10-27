@@ -1,10 +1,36 @@
 <?php
-    session_start();
+
+    $maxlifetime = 60*60*4; //maximo tiempo de vida de la sesion en segundos
+    $secure = true; //habilitar seguridad
+    $http_only = true;
+    $samesite = 'lax';
+    $host=$_SERVER['HTTP_HOST'];
+
+    session_set_cookie_params([
+        'lifetime' => $maxlifetime,
+        'path' => './',
+        'domain' => $host,
+        'secure' => $secure,
+        'httponly' => $http_only,
+        'samesite' => $samesite
+
+    ]);
+    session_start([
+        //'cookie_lifetime' => 60*60*4 
+    ]);
     function checkSession() : bool {
         return isset($_SESSION['correo']) && $_SESSION['correo'] != null;
     }
 
     //Secho checkSession();
+
+    //TRABAJANDO VARIABLES DE ENTORNO 
+    $env = parse_ini_file(".env");
+    //print_r($env);
+
+    foreach ($env as $key => $value) {
+        $_ENV[$key]= $value;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
