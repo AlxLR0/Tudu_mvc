@@ -19,19 +19,19 @@
         <h3 class="text-center textoChido">Menu</h3>
         <hr>
         <div class="card" style="width: 16.5rem;">
-            <img class="card-img-top" src="/mvc/app/assets/user.png" alt="Card image cap">
+            <img class="card-img-top" src="/app/assets/user.png" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">correo: <?php  echo $_SESSION['correo'];?></h5>                
                 <a href="#" class="btn btn-primary"><i class="ri-user-fill"> </i>Perfil</a>
-                <a href="/mvc/logout" class="btn btn-outline-primary"><i class="ri-logout-circle-line"> </i>Logout</a>
+                <a href="/logout" class="btn btn-outline-primary"><i class="ri-logout-circle-line"> </i>Logout</a>
             </div>
         </div>
         <ul class="list-group mt-3">
             <li class="list-group-item bg-primary">
-                <a href="/mvc/tareas/registro" class="btn btn-link textoChido">Nueva tarea</a>
+                <a href="/tareas/registro" class="btn btn-link textoChido">Nueva tarea</a>
             </li>
             <li class="list-group-item">
-                <a href="/mvc/tareas" class="btn btn-link ">Mis tareas</a>
+                <a href="/tareas" class="btn btn-link ">Mis tareas</a>
             </li>
         </ul>
     </div>

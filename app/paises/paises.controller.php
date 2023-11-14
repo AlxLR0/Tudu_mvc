@@ -1,8 +1,10 @@
 <?php
-if (!isset($path_components[2])) 
-    $path_components[2] = 'por-continente';
-
-switch ($path_components[2]) {
+if (!isset($path_components[$path_index + 1])) {
+    $path_components[$path_index +1 ] = 'por-continente';
+}
+    echo "<script src='/app/paises/helper/renderPaises.helper.js'></script>";
+    // echo "<script src = '/mvc/app/paises/ver-pais/controller/ver-pais.controller.js'></script>";
+switch ($path_components[$path_index + 1]) {
     case 'por-continente':
         require_once("./app/paises/por-continente/view/por-continente.view.php");
         break;
@@ -14,6 +16,6 @@ switch ($path_components[2]) {
         break;
     
     default:
-        header("Location: /mvc/paises/por-continente");
+        header("Location: /paises/por-continente");
         break;
 }

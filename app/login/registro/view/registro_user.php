@@ -27,7 +27,7 @@
                         <label for="repetirContrasena" class="form-label"><i class="ri-lock-fill ri-lg"></i>Repetir Contraseña</label>
                         <input type="password" class="form-control" id="repetirContrasena" name="repetirContrasena" required>
                     </div>
-                    <p class="text-center">¿ya tienes cuenta? <strong><a href="/mvc/login" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">iniciar sesion</a></strong></p>
+                    <p class="text-center">¿ya tienes cuenta? <strong><a href="login" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">iniciar sesion</a></strong></p>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-outline-success" type="submit">Crear cuenta <i class="ri-check-fill ri-lg"></i></button>
                     </div>

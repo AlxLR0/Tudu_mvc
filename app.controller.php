@@ -1,5 +1,5 @@
 <?php
-    switch ($path_components[1]) {
+    switch ($path_components[$path_index]) {
         case 'formulario':
             require_once("./app/registro/controller/registro.controller.php");
             break;
@@ -15,7 +15,7 @@
             if (!checkSession())          
                 require_once("./app/login/login.controller.php");
             else 
-                header("Location: /mvc/tareas/mi-lista");
+                header("Location: /tareas/mi-lista");
             
             break;
         
@@ -23,7 +23,7 @@
             if (!checkSession())               
                 require_once("./app/login/registro/controller/registro.controller.php");
             else 
-            header ("Location: /mvc/tareas");
+            header ("Location: /tareas");
             
             break;    
             // require_once("./app/login/registro/controller/registro.controller.php");
@@ -32,7 +32,7 @@
         case 'logout':
             //session_start();
             session_destroy();
-            header("Location: /mvc/login");//mover esto si no manda
+            header("Location: /login");//mover esto si no manda
             //  break;//si no jala me voy a canada
             break;
 

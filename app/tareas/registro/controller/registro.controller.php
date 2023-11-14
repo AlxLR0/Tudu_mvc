@@ -15,7 +15,7 @@
             if (!TareasRepository::getInstance()->saveNewTarea($tarea)) {
 
                 $error = TareasRepository::getInstance()->getMysqli()->error;
-                header("Location: /mvc/tareas/registro?error=ERROR: {$error}");
+                header("Location: /tareas/registro?error=ERROR: {$error}");
                 // header("Location: /mvc/tareas/registro?error=no jalo mi bro");
                 break;
             }

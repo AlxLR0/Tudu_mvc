@@ -19,7 +19,7 @@
                 } else {
                     // Contraseña válida, redirigir al usuario a la página de tareas
                     $_SESSION['correo'] = $correo; // Guardar el correo en la sesión
-                    header("Location: /mvc/tareas");
+                    header("Location: /tareas");
                     exit;
                 }
             }

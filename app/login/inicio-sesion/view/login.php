@@ -23,7 +23,7 @@
                         <label for="contrasena" class="form-label"><i class="ri-lock-fill ri-lg"></i>Contraseña</label>
                         <input type="password" class="form-control" id="contrasena" name="contrasena" required>
                     </div>
-                    <p class="text-center">¿No tienes cuenta? <strong><a href="/mvc/signup" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Crear cuenta</a></strong></p>
+                    <p class="text-center">¿No tienes cuenta? <strong><a href="/signup" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Crear cuenta</a></strong></p>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-success" type="submit">Entrar <i class="ri-arrow-right-fill ri-lg"></i></button>
                         <p class="text-center"><strong><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Olvide mi contraseña</a></strong></p>

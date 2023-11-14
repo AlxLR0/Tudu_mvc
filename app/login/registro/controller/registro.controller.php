@@ -37,12 +37,12 @@
             require_once("./app/login/registro/view/registro_user.php");
         } else {
             // No se produjo un error, redirige a otra página
-            header("Location: /mvc/login"); 
+            header("Location: /login"); 
         }
         break;
            
         
         default:
-            header("Location: /mvc/login");
+            header("Location: /login");
             break;
     }

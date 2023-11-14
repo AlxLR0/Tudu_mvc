@@ -1,8 +1,8 @@
 <?php
-if (!isset($path_components[2])) 
-$path_components[2] = '';
+if (!isset($path_components[$path_index + 1])) 
+$path_components[$path_index + 1] = '';
         
-switch ($path_components[2]) {
+switch ($path_components[$path_index + 1]) {
     case '':
        
         
@@ -12,7 +12,7 @@ switch ($path_components[2]) {
             
         }else {
             
-            header('Location: /mvc/tareas/mi-lista');
+            header('Location: /tareas/mi-lista');
         }
         break;
 
@@ -21,10 +21,10 @@ switch ($path_components[2]) {
             
             require_once("./app/login/registro/controller/registro.controller.php");
         }
-        header('Location: /mvc/tareas/mi-lista');
+        header('Location: /tareas/mi-lista');
         break;
     
     default:
-       // header("Location: /mvc/login");
+       header("Location: /login");
         break;
 }
