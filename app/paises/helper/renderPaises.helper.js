@@ -117,7 +117,7 @@ function renderizarPaises(padre, countries){
             'btn-primary'
         );
         console.log('country.cca3:', country.cca3);
-        link.href = '/paises/ver-pais/'+ country.cca3;
+        link.href = '/app-paises/ver-pais/'+ country.cca3;
         link.innerText = 'Ver mas';
         footerCardDiv.appendChild(link);
 

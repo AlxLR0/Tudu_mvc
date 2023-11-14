@@ -16,6 +16,6 @@ switch ($path_components[$path_index + 1]) {
         break;
     
     default:
-        header("Location: /paises/por-continente");
+        header("location: /app-paises/por-continente");
         break;
 }

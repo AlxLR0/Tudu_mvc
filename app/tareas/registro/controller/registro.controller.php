@@ -23,6 +23,6 @@
             
         
         default:
-            header("Location: /mvc/tareas/mi-lista");
+            header("Location: /tareas/mi-lista");
             break;
     }

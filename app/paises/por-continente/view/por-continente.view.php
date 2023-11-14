@@ -1,4 +1,4 @@
-x<h1 class="text-center">App Paises</h1>
+<h1 class="text-center">App Paises</h1>
 <hr>
 <main class="row">
     <!-- Menu -->
@@ -19,4 +19,4 @@ x<h1 class="text-center">App Paises</h1>
     </section>
 </main>
 <script src="/app/paises/por-continente/controller/por-continente.controller.js"></script>
-<!-- <script src="/app/paises/helper/renderPaises.helper.js"></script> -->
+<script src="/app/paises/helper/renderPaises.helper.js"></script>

@@ -13,9 +13,9 @@
             <p class="card-text mb-1">Idioma Principal: <b id = "paisLang"></b></p>
         </div>
         <div class="card-footer text-center">
-            <a class="btn btn-primary w-100" href="#">Regresar</a>
+            <a class="btn btn-primary w-100" href="/app-paises/">Regresar</a>
         </div>
     </div>
 </div>
 
-<script src = "/app/paises/ver-pais/controller/ver-pais.controller.js"></script>
+<script src = "/app/app-paises/ver-pais/controller/ver-pais.controller.js"></script>

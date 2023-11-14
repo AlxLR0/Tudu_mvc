@@ -23,6 +23,6 @@ async function requestData(countryName){
             renderizarPaises(paisesContainer,paises);
         }
     ).catch(error => {
-        alert("Error: " + error)
+        // alert("Error: " + error)
     });
 }
