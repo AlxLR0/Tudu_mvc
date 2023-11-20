@@ -17,12 +17,12 @@ menu.onclick = () => {
 
 const sr = ScrollReveal({
     distance:'65px',
-    duration: 2600,
+    duration: 2000,
     delay: 450,
     reset: true
 })
 
-sr.reveal('.hero-text',{delay:190, origin:'top'}); //para el texto de la pag
-sr.reveal('.hero-img',{delay:490, origin:'rigth'});
+sr.reveal('.hero-text',{delay:100, origin:'top'}); //para el texto de la pag
+sr.reveal('.hero-img',{delay:400, origin:'rigth'});
 sr.reveal('.icons',{delay:500, origin:'left'});
 //sr.reveal('.scroll-down',{delay:500, origin:'rigth'});

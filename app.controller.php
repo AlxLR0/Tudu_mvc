@@ -40,7 +40,8 @@
             require_once("./app/paises/paises.controller.php");
             break;
         default:
-            header("HTTP/1.1 404 NOT FOUND");
+            // header("HTTP/1.1 404 NOT FOUND"); en caso de que truene esta cosa descomentar esto y comentar el de abajo
+            header("Location: /presentacion");
             break;
     }
 ?>
